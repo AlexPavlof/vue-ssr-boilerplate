@@ -1,0 +1,51 @@
+{
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "jest",
+    "vue"
+  ],
+  "rules": {
+    "max-len": ["error", 120, 2, {"ignoreComments": true}],
+    "func-names": ["error", "never"],
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "key-spacing": ["error", { "align": "value" }],
+    "no-multi-spaces": ["error", { "exceptions": { "VariableDeclarator": true, "ImportDeclaration": true } }],
+    "no-new": 0,
+    "no-param-reassign": 0,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "vue/html-indent": ["error", 4],
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "jest/globals": true,
+    "jest": true
+  },
+  "globals": {
+    "_": false,
+    "Vue": false,
+    "location": false
+  }
+}

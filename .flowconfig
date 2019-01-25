@@ -1,0 +1,17 @@
+[ignore]
+.*/html/.*
+
+[include]
+
+[libs]
+./flow-typed
+
+[lints]
+
+[options]
+module.name_mapper='.*(.less|.css)' -> 'empty/object'
+module.file_ext=.less
+module.file_ext=.js
+module.file_ext=.css
+
+[strict]
